@@ -1,0 +1,22 @@
+function myMenuFunction(){
+    var menuBth = document.getElementById("myNaveMenu");
+
+    if (menuBth.className === "nav-menu") {
+        menuBth.className += "responsive";
+    }
+    else{
+        menuBth.className = "nav-menu";
+    }
+}
+
+// dark mode
+
+const body = document.querySelector("body"),
+    toggleSwitch = document.getElementById("toggle-switch");
+
+toggleSwitch.addEventListener("click", ()=> {
+    body.classList.toggle("dark");
+});
+
+
+
